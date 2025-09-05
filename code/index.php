@@ -12,7 +12,7 @@
 <!--Working area section-->
   <section>
     <div class="min-h-32 bg-blue-100">
-    <!--it is very unclean and unsafe approach , just to learn how to save incomming data on server-->
+    <!--it is very unclean and unsafe approach , just to learn how to save incoming data on server-->
         <?php
             if (isset ($_POST["visitor_name"]) && strlen(string: $_POST["visitor_name"] > 2))
             {
