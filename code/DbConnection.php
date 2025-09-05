@@ -1,6 +1,7 @@
-<?php 
+<?php
+
 /**
- * this class is only responsible to connect database
+ * this class is only responsible to connect database 
  */
 class DbConnection
 {
@@ -9,24 +10,24 @@ class DbConnection
     private $dbname;
     private $user;
     private $password;
- 
+
     /**
-     * constructor set all important connection values
-     * @param string $host  
-     * @param string $dbname  
+     * constructor set all important connection values 
+     * @param string $host   
+     * @param string $dbname   
      * @param string $user  
-     * @param string $password
+     * @param string $password 
      */
     public function __construct()
     {
-        $this->host = "localhost";
-        $this->dbname = "prof_lee_db";
+        $this->host = "db";
+        $this->dbname = "prof_lee";
         $this->user = "root";
         $this->password = "";
     }
- 
+
     /**
-     * @return PDO  
+     * @return PDO   
      * @throws PDOException
      */
     public function connect(): PDO
@@ -44,14 +45,12 @@ class DbConnection
                 throw new PDOException("error in connection from php " . $e->getMessage(), (int)$e->getCode());
             }
         }
- 
         return $this->connection;
     }
- 
- 
+
+
     public function close(): void
     {
         $this->connection = null;
     }
 }
-?>

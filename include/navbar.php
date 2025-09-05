@@ -1,5 +1,4 @@
 <!--navbar-->
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +8,14 @@
   <title>Document</title>
 </head>
 <body>
-    <section>
-        <nav class="bg-gray-800 text-gray-100 p-4">
-            <ul class="flex space-x-6 hover:[&>li]:underline">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
-        </nav>
-    </section>
+  <!--navbar-->
+  <section>
+    <nav class="bg-gray-800 text-gray-100 p-4">
+        <ul class="flex space-x-6 hover:[&>li]:underline">
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+    </nav>
+  </section>
